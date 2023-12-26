@@ -36,10 +36,10 @@ https://github.com/steven-tey/novel/assets/28986134/2099877f-4f2b-4b1c-8782-5d80
 
 ## Installation
 
-To use Novel in a project, you can run the following command to install the `novel` [NPM package](https://www.npmjs.com/package/novel-ubk):
+To use Novel in a project, you can run the following command to install the `novel` [NPM package](https://www.npmjs.com/package/ubk-novel):
 
 ```
-npm i novel-ubk
+npm i ubk-novel
 ```
 
 Then, you can use it in your code like this:
