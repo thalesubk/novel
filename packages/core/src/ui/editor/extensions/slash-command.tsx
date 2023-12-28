@@ -188,14 +188,14 @@ const getSuggestionItems = ({ query }: { query: string }) => {
           .toggleBlockquote()
           .run(),
     },
-    {
-      title: "Code",
-      description: "Capture a code snippet.",
-      searchTerms: ["codeblock"],
-      icon: <Code size={18} />,
-      command: ({ editor, range }: CommandProps) =>
-        editor.chain().focus().deleteRange(range).toggleCodeBlock().run(),
-    },
+    // {
+    //   title: "Code",
+    //   description: "Capture a code snippet.",
+    //   searchTerms: ["codeblock"],
+    //   icon: <Code size={18} />,
+    //   command: ({ editor, range }: CommandProps) =>
+    //     editor.chain().focus().deleteRange(range).toggleCodeBlock().run(),
+    // },
     // {
     //   title: "Image",
     //   description: "Upload an image from your computer.",
@@ -290,7 +290,7 @@ const CommandList = ({
         command: item.title,
       });
       if (item) {
-        if (item.title === "Continue writing") {
+        if (item.title === "Continue escrevendo") {
           if (isLoading) return;
           complete(
             getPrevText(editor, {
@@ -364,7 +364,7 @@ const CommandList = ({
             onClick={() => selectItem(index)}
           >
             <div className="novel-flex novel-h-10 novel-w-10 novel-items-center novel-justify-center novel-rounded-md novel-border novel-border-stone-200 novel-bg-white">
-              {item.title === "Continue writing" && isLoading ? (
+              {item.title === "Continue escrevendo" && isLoading ? (
                 <LoadingCircle />
               ) : (
                 item.icon
